@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:jee="http://www.springframework.org/schema/jee"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+        xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+        http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+    <context:component-scan base-package="com.skapps.cfweb.controllers" />
+    <mvc:annotation-driven />
+    <tx:annotation-driven />
+    <jee:jndi-lookup jndi-name="java:/CFWebDS" id="cfwebDataSource" expected-type="javax.sql.DataSource" />
+
+    <bean id="cfwebSessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="cfwebDataSource" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MariaDBDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+        <property name="packagesToScan" value="com.skapps.cfweb.entities" />
+    </bean>
+
+    <bean id="cfWebDao" class="com.skapps.cfweb.dao.impl.CFWebDaoImpl" />
+
+    <bean id="digitalLibraryService" class="com.skapps.cfweb.services.impl.DigitalLibraryServiceImpl" />
+    <bean id="photoService" class="com.skapps.cfweb.services.impl.PhotoServiceImpl" />
+    <bean id="userService" class="com.skapps.cfweb.services.impl.UserServiceImpl" />
+
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="cfwebSessionFactory"/>
+    </bean>
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*" rollback-for="Exception"/>
+        </tx:attributes>
+    </tx:advice>
+</beans>

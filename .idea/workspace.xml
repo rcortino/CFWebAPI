@@ -10,44 +10,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e80813a-4d0f-4fef-b16b-b9b7f8c06488" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/DigitalLibraryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/PhotoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/CfWebDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/MatchType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/Params.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/impl/CFWebDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/AuthRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/CredentialDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/RegistrationApprovalDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/UserRegistrationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/Photo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/RegistrationHold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/exceptions/AuthenticationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/exceptions/TokenValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/objects/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/DigitalLibraryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/PhotoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/DigitalLibraryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/PhotoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/cfweb-dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="3e80813a-4d0f-4fef-b16b-b9b7f8c06488" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/DigitalLibraryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/PhotoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/impl/DigitalLibraryDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/impl/PhotoDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/AlbumDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/BookDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/PhotoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/DTOUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/DigitalLibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/DigitalLibraryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/PhotoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/PhotoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/MatchType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/Params.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/impl/CFWebDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/impl/CFWebDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/PhotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/DigitalLibraryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/DigitalLibraryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/PhotoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/PhotoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/cfweb-dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/cfweb-dispatcher-servlet.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -177,8 +161,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688128808030</updated>
-      <workItem from="1688128809534" duration="11390000" />
+      <workItem from="1688128809534" duration="20772000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1688754144135</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688754144135</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +186,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -222,6 +218,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/RedisUtils.java</url>
           <line>61</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/DTOUtils.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

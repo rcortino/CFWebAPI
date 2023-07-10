@@ -29,6 +29,8 @@
     </bean>
 
     <bean id="cfWebDao" class="com.skapps.cfweb.dao.impl.CFWebDaoImpl" />
+    <bean id="photoDao" class="com.skapps.cfweb.dao.impl.PhotoDaoImpl" />
+    <bean id="dlibDao" class="com.skapps.cfweb.dao.impl.DigitalLibraryDaoImpl" />
 
     <bean id="digitalLibraryService" class="com.skapps.cfweb.services.impl.DigitalLibraryServiceImpl" />
     <bean id="photoService" class="com.skapps.cfweb.services.impl.PhotoServiceImpl" />

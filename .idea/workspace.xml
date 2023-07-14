@@ -10,28 +10,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e80813a-4d0f-4fef-b16b-b9b7f8c06488" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/DigitalLibraryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/PhotoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/impl/DigitalLibraryDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/impl/PhotoDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/AlbumDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/BookDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/PhotoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/DTOUtils.java" afterDir="false" />
+    <list default="true" id="3e80813a-4d0f-4fef-b16b-b9b7f8c06488" name="Changes" comment="Daily Dev commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/AuthorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/BookQueryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dtos/GenreDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/digitallibrary/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/digitallibrary/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/digitallibrary/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/digitallibrary/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/DigitalLibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/DigitalLibraryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/PhotoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/PhotoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/MatchType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/Params.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/Query.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/impl/CFWebDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/dao/impl/CFWebDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/entities/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/PhotoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/DigitalLibraryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/DigitalLibraryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/PhotoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/services/impl/PhotoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/cfweb-dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/cfweb-dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/RedisUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +57,8 @@
     "last_opened_file_path": "C:/Users/dcortino/IdeaProjects/CFWebAPI/src/main/java/com/skapps/cfweb/dao",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.21582031",
-    "project.structure.side.proportion": "0.18455158"
+    "project.structure.side.proportion": "0.18455158",
+    "spring.configuration.checksum": "4682745edce5c798b4507ca41b30d10b"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -161,7 +152,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688128808030</updated>
-      <workItem from="1688128809534" duration="20772000" />
+      <workItem from="1688128809534" duration="21522000" />
+      <workItem from="1689067783180" duration="8226000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1688754144135</created>
@@ -170,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688754144135</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Daily Dev commit">
+      <created>1689015481498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689015481498</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +188,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Daily Dev commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Daily Dev commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -206,17 +206,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/RedisUtils.java</url>
-          <line>59</line>
+          <line>60</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/RedisUtils.java</url>
-          <line>60</line>
+          <line>61</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/skapps/cfweb/utils/RedisUtils.java</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

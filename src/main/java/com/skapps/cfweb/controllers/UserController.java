@@ -27,4 +27,6 @@ public class UserController implements BaseController {
 
     @RequestMapping(value = "authenticate", method = RequestMethod.GET, consumes = JSON, produces = JSON)
     public UserDTO authenticate(@RequestBody AuthRequestDTO request) throws AccountLockedException { return userService.authenticateUser(request); }
+
+
 }
